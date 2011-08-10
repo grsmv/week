@@ -1,7 +1,7 @@
-=== Description:
+## Description:
 A simple gem to work with weeks as arrays of days numbers. It works with commercial dates (according to http://en.wikipedia.org/wiki/ISO_week_date).
 
-=== Usage:
+## Usage:
 
     week(2011, 52).map { |day| p day }
     # =>
