@@ -1,6 +1,6 @@
-
   require 'date'
 
+  # Simple addition for days-processing simplification
   class Numeric
     def days
       self * 60 * 60 * 24
@@ -17,9 +17,7 @@
 
     class << self
       def nmonth year
-        nmonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-        nmonth[1] = Date.new(year, 1, 1).leap? ? 29 : 28
-        nmonth
+        [31, (Date.new(year, 1, 1).leap? ? 29 : 28), 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
       end
     end
 
@@ -36,7 +34,7 @@
         common_days += month
       end
       
-      tmp_first_day = tmp_wday - common_days - 7
+      tmp_first_day = tmp_wday - common_days
       
       # fixing day number for calculate first week of the year
       tmp_first_day = tmp_first_day == 0 ? 1 : tmp_first_day
@@ -59,12 +57,8 @@
     end
   end
 
-  # Simpler API for Week class usage
-  def Week(year, week, fday = 0)
+  # Simplier API for Week class usage
+  @today = Date.today
+  def week(year = @today.year, week = @today.cweek, fday = 0)
     Week.new(year, week, fday).days
   end
-
-  #Week(2011, 1).map do |day|
-  #  p day
-  #end
-

@@ -2,8 +2,8 @@
 
 Gem::Specification.new do |s|
   s.name              = "week"
-  s.version           = "0.0.1"
-  s.date              = %q{2011-06-16}
+  s.version           = "0.0.2"
+  s.date              = %q{2011-08-10}
   s.platform          = Gem::Platform::RUBY
   s.authors           = ["Sergey Gerasimov"]
   s.email             = ["mail@grsmv.com"]
