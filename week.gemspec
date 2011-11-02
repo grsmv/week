@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors           = ["Sergey Gerasimov"]
   s.email             = ["mail@grsmv.com"]
   s.homepage          = "http://github.com/grsmv/week"
-  s.summary           = "Simple gem to work with weeks as arrays of day numbers."
-  s.description       = "Simple gem to work with weeks as arrays of day numbers."
+  s.summary           = "Simple gem to work with weeks as arrays of date objects."
+  s.description       = "Simple gem to work with weeks as arrays of date objects."
   s.rubyforge_project = s.name
   s.files             = ['README.md', 'CHANGELOG.md', 'LICENSE', 'lib/week.rb']
 
