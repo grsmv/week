@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.email             = ["mail@grsmv.com"]
   s.homepage          = "http://github.com/grsmv/week"
   s.summary           = "Simple gem to work with weeks as arrays of date objects."
-  s.description       = "Simple gem to work with weeks as arrays of date objects."
+  s.description       = "Simple gem to work with weeks as arrays of date objects. Also include monkey patch for Date class. Cheers!"
   s.rubyforge_project = s.name
   s.files             = ['README.md', 'CHANGELOG.md', 'LICENSE', 'lib/week.rb', 'test/test_week.rb']
 end

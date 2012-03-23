@@ -30,7 +30,7 @@ A simple gem to work with weeks as arrays of date objects. It works with commerc
     week(2011, 8, 1).map { |day| p day }
 
     # Also there is monkey patch for standart library Date class, 
-    # with wich you can sumply do this:
+    # with wich you can simply do this:
 
     Date.new(2011, 12, 25).week
 
