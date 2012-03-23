@@ -1,3 +1,5 @@
+require 'rake/testtask'
+
 begin
   require "bundler"
   Bundler.setup
@@ -7,6 +9,9 @@ end
 
 gemspec = eval(File.read(Dir["*.gemspec"].first))
 
+Rake::TestTask.new do |t|
+  t.libs << 'test'
+end
 
 desc "Validate the gemspec"
 task :gemspec do
@@ -29,3 +34,6 @@ desc "Clean automatically generated files"
 task :clean do
   FileUtils.rm_rf "pkg"
 end
+
+desc "Run tests"
+task :default => :test
