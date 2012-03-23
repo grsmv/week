@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    week (0.0.2)
+    week (0.0.3)
 
 GEM
   specs:

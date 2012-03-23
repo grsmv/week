@@ -1,3 +1,5 @@
+[![Build Status](https://secure.travis-ci.org/grsmv/week.png?branch=master)](http://travis-ci.org/grsmv/week)
+
 ## Description:
 A simple gem to work with weeks as arrays of date objects. It works with commercial dates (according to http://en.wikipedia.org/wiki/ISO_week_date).
 
