@@ -15,6 +15,8 @@ A simple gem to work with weeks as arrays of date objects. It works with commerc
     # (if todays date is 10, August 2011)
 
     week.map { |day| p day }
+
+    # =>
     # Sun Aug 07 00:00:00 +0300 2011
     # (...)
     # Sat Aug 13 00:00:00 +0300 2011
