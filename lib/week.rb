@@ -58,8 +58,14 @@
   end
 
   # Simplier API for Week class usage
-  # TODO: made it throuh hash
   @today = Date.today
   def week(year = @today.year, week = @today.cweek, fday = 0)
     Week.new(year, week, fday).days
+  end
+
+  # Monkey patch for Ruby standart library Date time
+  class Date
+    def week
+      Week.new(self.year, (self.cweek + 1), fday = 0).days
+    end
   end
