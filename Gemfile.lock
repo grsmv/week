@@ -1,0 +1,13 @@
+PATH
+  remote: .
+  specs:
+    week (0.0.2)
+
+GEM
+  specs:
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  week!
