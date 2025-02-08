@@ -1,4 +1,8 @@
+# frozen_string_literal: true
+
+source "https://rubygems.org"
+
 gemspec
 
-gem 'bundler'
-gem 'rake'
+gem "rake", "~> 13.0"
+gem "test-unit", "~> 3.0"
